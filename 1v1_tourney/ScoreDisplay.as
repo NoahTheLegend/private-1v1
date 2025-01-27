@@ -248,11 +248,12 @@ void onRender(CRules@ this)
             scoreDisplayCentre.x + scoreSpacing,
             scoreDisplayCentre.y);
     GUI::DrawText("" + team0Score, topLeft0, TEAM0COLOR);
-    GUI::DrawTextCentered("" + blue, topLeft0 - Vec2f(250, 60), TEAM0COLOR);
+    //GUI::DrawTextCentered("" + blue, topLeft0 - Vec2f(250, 60), TEAM0COLOR);
     GUI::DrawText("-", Vec2f(scoreDisplayCentre.x - scoreSeperatorDims.x/2.0, scoreDisplayCentre.y), color_black);
     GUI::DrawText("" + team1Score, topLeft1, TEAM1COLOR);
-    GUI::DrawTextCentered("" + red, topLeft1 - Vec2f(-274, 60), TEAM1COLOR);
+    //GUI::DrawTextCentered("" + red, topLeft1 - Vec2f(-274, 60), TEAM1COLOR);
 
+    /*
     // blue hearts
     Vec2f topleft_0_two = topLeft0 - Vec2f(394, 30);
 
@@ -330,6 +331,7 @@ void onRender(CRules@ this)
         GUI::DrawIcon("HeartNew.png", frame, Vec2f(12, 12), topleft_1_two, 2.0, 0);
         topleft_1_two += Vec2f(12 * 4.0, 0);
     }
+    */
 
     if (!this.isMatchRunning() || this.get_bool("no timer") || !this.exists("end_in")) return;
 
