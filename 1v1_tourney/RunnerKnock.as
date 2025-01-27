@@ -18,8 +18,6 @@ f32 onHit(CBlob@ this, Vec2f worldPoint, Vec2f velocity, f32 damage, CBlob@ hitt
 	if (this.hasTag("dead")) //pass through if dead
 		return damage;
 
-	printf("Owo " + getGameTime());
-
 	u8 time = 0;
 	bool force = this.hasTag("force_knock");
 
